@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class Box : MonoBehaviour, Interactable
 {
+    public Key key;
+    public Interactor interactor;
+    //public Text keyMessage;
     public void Interact()
     {
-        Debug.Log("Ass");
+        key.KeyInHand = true;
     }
+
 }

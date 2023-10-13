@@ -5,10 +5,12 @@ using UnityEngine;
 interface Interactable
 {
     public void Interact();
+
 }
 public class Interactor : MonoBehaviour
 {
     public Transform interactorSource;
+    public bool noContact;
     public float interactRange;
     void Start()
     {
@@ -25,6 +27,11 @@ public class Interactor : MonoBehaviour
                 {
                     interactObj.Interact();
                 }
+                
+            }
+            else
+            {
+                return;
             }
         }
     }
