@@ -14,8 +14,6 @@ public class Interactor : MonoBehaviour
     {
         
     }
-
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
